@@ -1,3 +1,4 @@
+const cors = require('cors');
 const express = require('express');
 const path = require('path');
 const db = require('./config/connection');
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(cors());
 
 const server = new ApolloServer({
   typeDefs, resolvers,
@@ -30,7 +32,7 @@ const startApolloServer = async () => {
   db.once('open', () => {
     app.listen(PORT, () => {
       console.log(`API server live on localhost:${PORT}`);
-      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphglPath}`);
+      console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
     });
   });
 };

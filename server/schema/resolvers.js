@@ -1,4 +1,4 @@
-const { books } = require('../models')
+const { bookSchema } = require('../models')
 
 module.exports = {
     Query: {
