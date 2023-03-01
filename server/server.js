@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 const server = new ApolloServer({
-  typeDefs, resolvers,
+ typeDefs, resolvers,
 });
 
 // if we're in production, serve client/build as static assets
