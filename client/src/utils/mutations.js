@@ -46,7 +46,7 @@ export const newUser = graphql`
 `;
 
 export const saveBook = graphql`
-  mutation saveBook($newBook: InputBook!) {
+  mutation saveBook($newBook: book!) {
     saveBook(newBook: $newBook) {
       _id
       username
