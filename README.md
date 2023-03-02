@@ -20,7 +20,7 @@ Have a look at the deployed Web App through Heroku [HERE](https://book-search-en
 ### Run ```npm run develop``` from the top directory.
 
 Runs the app in the development mode.\
-Open [http://localhost:3001/graphql](http://localhost:3001/graphql) to view it the Apollo Sandbox, in your browser.
+Open [http://localhost:3001/graphql](http://localhost:3001/graphql) (with the server running) to view it the Apollo Sandbox, in your browser.
 
 ## Usage
 
