@@ -5,6 +5,8 @@
 Most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
 
 Here I have taken a fully functioning Google Books API search engine built with a RESTful API, and refactored it to be a GraphQL API built with Apollo Server.
+
+Have a look at the deployed Web App through Heroku [HERE](https://book-search-engine-refactored.herokuapp.com/).
 ## Table of Contents
 
 - [Installation](#installation)
